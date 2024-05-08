@@ -58,23 +58,8 @@ void BST::display(node * r1){
 }
 
 int main(){
-    int ch;
-    BST  bst;
-    while(1){
-        cout<<"Book Tree Creation"<<endl;
-        cout<<" 1.Create  2.Display  3.Quit"<<endl;
-        cout<<"Enter choice :";
-        cin>>ch;
-        switch(ch){
-            case 1:
-                bst.createtree();
-            case 2:
-                bst.display(root);
-                break;
-            case 3:
-                exit(1);
-            default:
-                cout<<"Wrong Choice"<<endl;
-        }
-    }
+    BST bst;
+    bst.createtree();
+    bst.display(root);
+    return 0;
 }
